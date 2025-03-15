@@ -1,6 +1,6 @@
 Top 100 paid reports from HackerOne:
 
-1. [Github access token exposure](https://hackerone.com/reports/1087489) to Shopify - $50000, 1269 upvotes
+1. [Github access token exposure](https://hackerone.com/reports/1087480) to Shopify - $50000, 1269 upvotes
 2. [[Pre-Submission][H1-4420-2019] API access to Phabricator on code.uberinternal.com from leaked certificate in git repo](https://hackerone.com/reports/591813) to Uber - $39999, 367 upvotes
 3. [Незащищённый экземпляр Zeppelin ](https://hackerone.com/reports/992564) to Mail.ru - $35000, 169 upvotes
 4. [Remote Command Execution via Github import](https://hackerone.com/reports/1679624) to GitLab - $33510, 318 upvotes
