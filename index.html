@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Form</title>
+    <script>
+        async function fetchDataAndPost() {
+            const data = {
+                app_id: "zlmaz2pu",
+                v: "3",
+                g: "9571d7fee9ae6ef40ad3bbadb6be67e936663f53",
+                s: "90a90409-c710-48e6-a3d7-ee9ea7e0dcd7",
+                r: "https://hackerone.com/users/sign_in",
+                platform: "web",
+                installation_type: "js-snippet",
+                "Idempotency-Key": "08bd2bd0296973e6",
+                internal: { marketo_tracking_cookie: "id:168-NAU-732&token:_mch-hackerone.com-86ccad67ae18ba19f7f955ca533f522" },
+                is_intersection_booted: false,
+                page_title: "HackerOne",
+                user_active_company_id: "undefined",
+                user_data: {
+                    email: "nigampatel365@gmail.com",
+                    user_id: 3530458,
+                    user_hash: "d7a892b078d861c4d9a874cf67e4c38181bd93fbc9efb9e03a704a3c67e90900",
+                    name: "Alfred Pennyworth",
+                    created_at: 1734682324
+                },
+                source: "apiBoot",
+                sampling: false,
+                referer: "https://hackerone.com/settings/hai_plays",
+                anonymous_session: "NzFpRHVjNnR5UXBqYnQ4bWVxb2RQcm9yU3J0MEI0UmxoT01WZjdTTHZFYkdhUHE2SGtmQmtPMzRBZWV5TWFlSWt4OTZyMWNUYmtaVE40Q2pCdjUrbFZ0QytXdVFja0lEYWFiY1E0azBoeGc9LS1IRDdOdWFndGNDcGJxZ2ZEMzF6WUVnPT0=--a928e5ab3f3edf6d60041791ccf99489ccc6d7cc",
+                device_identifier: "39d2e8a7-83e9-496d-b6a1-e0cd0ab3fd7c"
+            };
+
+            try {
+                const response = await fetch("api-iam.intercom.io/messenger/web/ping", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+                console.log("Success:", result);
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fetchDataAndPost()">Submit Data</button>
+</body>
+</html>
